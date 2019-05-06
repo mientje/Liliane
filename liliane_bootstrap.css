@@ -1,41 +1,65 @@
+
+@font-face {
+  font-family: 'Italianno-Regular';
+  src:
+  url('fonts/Italianno-Regular/Italianno-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Italianno-Regular/Italianno-Regular.woff') format('woff'),
+  url('fonts/Italianno-Regular/Italianno-Regular.ttf')  format('truetype'),
+  url('fonts/Italianno-Regular/Italianno-Regular.svg#Italianno-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src:
+  url('fonts/raleway/raleway_medium/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.woff') format('woff'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.ttf')  format('truetype'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body, html {
     height: 100% !important;
     width: 100% !important;
-}
-body {
-  background-color: lightcyan;
+    background-image: linear-gradient(to right, #202124, #676973 28%);
 }
 nav.navbar {
-  background: url("achtergronden/background-design-material-850796.jpg");
-  background-size: cover;
-  width: 25%;
+  width: 23%;
   height:100%;
   display: flex;
   flex-direction: column;
-}
-.navbar .navbar-nav .nav-link {
-    color: black !important;
-    /*lettertype veranderen*/
-    font-family: 'Nunito', sans-serif  !important;;
-    /*font-family: 'Roboto Condensed', sans-serif;*/s
+  background: url("achtergronden/attractive-backdrop-background-988872.jpg");
 }
 ul.navbar-nav {
   display: flex;
   flex-direction: column !important;
 }
-li.navbar-item {
-  margin : 0 8px !important;
+li.navbar-item  {
+  margin : 15% 8px !important;
+
+}
+li.navbar-item a.nav-link {
+  text-align: center;
+  color: #08090d;
+  /*lettertype veranderen*/
+  font-family: 'Nunito', sans-serif  !important;
+  font-size: 20px;
+  font-weight: bold:
+  /*font-family: 'Roboto Condensed', sans-serif;*/s
 }
 main {
-  background-color: alabaster;
-  //background-image: linear-gradient(to bottom, #99e0ff 60%, #8ecbe6 90%, #6fa0b5/*, #180b0f*/);
+  /*background-color: alabaster;
+  //background-image: linear-gradient(to bottom, #99e0ff 60%, #8ecbe6 90%, #6fa0b5 , #180b0fX);*/
   /*achtergrond veranderen*/
-  //background-image: url("https://cdn.pixabay.com/photo/2017/06/15/23/47/painting-2407262_960_720.jpg");
+  /*//background-image: url("https://cdn.pixabay.com/photo/2017/06/15/23/47/painting-2407262_960_720.jpg");
   //background-repeat: no-repeat;
   //background-size: cover;
-  //background-position: center;
+  //background-position: center;*/
   z-index: -1;
-  width: 75%;
+  width: 80%;
   height: 100%;
   margin-left: 25%;
 }
@@ -43,13 +67,15 @@ img {
   margin: 0 auto;
 }
 .navbar-brand {
-  /*lettertype veranderen*/
-  font-family: 'Mr Dafoe', cursive;
-  font-size: 60px;
-  color: black; /* #8f8028 !important; */
-  margin-left: 30px;
+  font-family: 'Italianno-Regular' !important;
+  line-height: 80px;
+	font-size: 5em !important;
+  color: #08090d;
   text-align: center;
-  /*
+  text-shadow: #dbdbdb 1px 3px 7px;
+  /*lettertype veranderen*/
+  /*font-family: 'Mr Dafoe', cursive;
+  font-size: 100px;
   font-family: 'Mrs Saint Delafield', cursive;
   font-family: 'Meddon', cursive;
   font-family: 'Homemade Apple', cursive; */
