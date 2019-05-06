@@ -1,0 +1,276 @@
+body {
+  background: white;
+  font-size: 100%;
+  font-family: 'Roboto Slab', serif;
+  margin : 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+html {
+	font-size: 10px;
+}
+
+html, body, main, div.slideshow-container {
+	height: 100%;
+	width: 100%;
+}
+
+/* nav {
+	width : 30%;
+	position: relative;
+	display: inline-block;
+} dit is voor laptopview */
+
+#overlay {
+	width: 0%;
+	height: 100%;
+	position: fixed;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.8);
+	transition: 0.5s;
+}
+
+nav {
+	position: relative;
+	transition: 0.5s;
+	margin: 0;
+	padding: 0;
+}
+
+article {
+	margin: 5em 0 0 2em;
+}
+
+ul {
+	list-style-type: none;
+ 	position: relative;
+	padding : 0;
+	margin: 0;
+	left: -50em;
+	right: 100%;
+    transition-duration: 0.5s;
+}
+
+ul.visible {
+	right: 0em;
+	left: 0em;
+}
+
+li {
+	text-align: center;
+ 	padding: 1.5em 0 1.5em 0;
+}
+
+div#overlay nav ul li ul.subMenu {
+	display: none;
+}
+
+div#overlay nav ul li ul.subMenu.visible {
+	display:  block;
+}
+
+div.navText {
+	display: none;
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+.navText > p {
+	color: white;
+}
+div.navText.visible {
+	display: block;
+}
+
+a {
+ 	text-decoration: none;
+	font-size: 2em;
+	color: white;
+}
+
+a.dropMenu {
+	font-size: 1.5em;
+}
+
+#navMenu {
+	width: 4em;
+	height: 4em;
+	position: relative;
+	top: 4.2em;
+	left : -2em;
+	border: 0.15em #3B413C solid;
+	border-radius: 100%;
+	text-align: center;
+	color: #3B413C;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 120%;
+	margin-left: 85%;
+	background: -webkit-linear-gradient(left top, #DAF0EE, #9DB5B2); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #DAF0EE, #9DB5B2); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #DAF0EE, #9DB5B2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #DAF0EE, #9DB5B2); /* Standard syntax */
+	box-shadow: 0.3em 0.3em 0.5em #3B413C;
+}
+
+#closeNav {
+	font-size: 5em;
+	color: white;
+	position: relative;
+	text-align: right;
+	top: 0.65em;
+	right: 0.65em;
+	font-family: Helvetica;
+}
+
+p {
+	font-size: 1.5em;
+	color: black;
+}
+
+.tabContent {
+	display: none;
+}
+
+#beelden, #schilderijen, #keramiek, #workshops {
+	display: none;
+}
+
+main {
+	position: relative;
+	top: 5em;
+	margin: 0 auto 0 auto;
+}
+
+/* main {
+	width: 70%;
+	float: right;
+} dit is voor laptopview */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+	top: 5em;
+}
+
+div.mySlides.fade img {
+	border-radius: 2em;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.pijl {
+  cursor: pointer;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.6s ease;
+  border-radius: 0 0.3em 0.3em 0;
+  position: absolute;
+}
+
+#prev {
+	left: 1.5em;
+}
+
+#next {
+	right: 1.5em;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.pijl:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;    /* #f2f2f2 */
+  font-size: 1.2em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black; /*#f2f2f2; */
+  font-size: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+#dotjes {
+	position: relative;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.3em;
+  width: 1.3em;
+  margin: 0 0.8em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*#breedteEnHoogte {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	position: relative;
+	bottom: 300px;
+} */
+
+@media (min-width: 450px) {
+	div.mySlides {
+		max-width: 85%;
+		max-height: 85%;
+		position: relative;
+		left: 7.5%;
+	}
+ 	div#navMenu {
+		top: 2em;
+		right: 2em;
+		z-index: 2;
+	}
+	.slideshow-container {
+		top: -1em;
+	}
+}
