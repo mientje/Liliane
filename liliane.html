@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta charset='utf-8'>
+	<meta title='Liliane'>
+	<link href='liliane.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- begin : scherm met de kiosk in het midden en linksboven een knop - als je op de knop druk verschijnt een scherm met vier knoppen in het midden 
+als je op een knop drukt, worden ze vervangen door een tekst of door de kiosk, 
+links boven een kleine knop - die je terug naar het eerste menu brengt - -->
+
+
+<div id="overlay" onclick="hideNavList(event)">
+	<div id="closeNav">X</div>
+	<nav >
+		<ul >
+			<li class="navList" onclick="showNavText('#OverMij')" id="OverMij"><a href="#">Over Mij</a>
+				<div class="navText" >
+					<p>
+						Al 30 jaar ben ik bezig met klein en keramiek.
+						blablabblablalbaldblalabl
+						In mijn atelier te Berendrecht werk ik dagelijks aan
+						nieuwe stukken.
+						Blablbalbla
+					</p>
+				</div>	
+			</li>
+			<li class="navList" onclick="showNavText('#Contact')" id="Contact" ><a href="#">Contact</a>
+				<div class="navText" >
+					<p>
+						emailadress
+					</p>
+				</div>
+			</li>
+			<li><a href="#" class="tabLinks" id="Werk" onclick="openButton(event)">Werk</a>
+				<ul class="subMenu">
+					<li onmousedown="OpenHoofdstuk(event, 'keramiek')"><a href="#" id="keramiekMenu" class="dropMenu" >Keramiek</a></li>
+					<li onmousedown="OpenHoofdstuk(event, 'schilderijen')"><a href="#" id="schilderijenMenu"class="dropMenu" >Schilderijen</a></li>
+					<li onmousedown="OpenHoofdstuk(event, 'beelden')"><a href="#" id="beeldenMenu" class="dropMenu" >Beelden</a></li>			
+				</ul>	
+			</li>	
+			<li><a href="#" class="tabLinks" onclick="OpenHoofdstuk(event, 'workshops')">Workshops</a></li> 	
+		</ul>
+	</nav>
+</div>
+<div id="navMenu" onclick="showNavList()"><br>Liliane</div>	
+ 
+<main>
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+		<div class="numbertext">1 / 5</div>
+		<img src="big.png">
+		<div class="text">Caption Text</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">2 / 5</div>
+		<img src="giraf.png">
+		<div class="text">Caption Two</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">3 / 5</div>
+		<img src="vogel.png">
+		<div class="text">Caption Three</div>
+	  </div>
+	  <div class="mySlides fade">
+		<div class="numbertext">4 / 5</div>
+		<img src="crossa.png">
+		<div class="text">Caption Four</div>
+	  </div>
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 4</div>
+		<img src="flashazijn.png">
+		<div class="text">Caption Four</div>
+	  </div>
+
+	<a class="pijl" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="pijl" id="next" onclick="plusSlides(1)">&#10095;</a>
+	
+ 	<div id="dotjes" style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span> 	  
+	  <span class="dot" onclick="currentSlide(5)"></span> 	  
+	</div> 
+
+
+	
+	<article id="keramiek" class="tabContent">
+		<p>Keramiek - blablablablablabla</p>
+	</article>
+	<article id="schilderijen" class="tabContent">
+		<p>Schilderijen - blablablablablabla</p>
+	</article>
+	<article id="beelden" class="tabContent">
+		<p>Beelden - blablablablablabla</p>
+	</article>
+	<article id="workshops" class="tabContent">
+		<p>Workshops - blablablablablabla</p>
+	</article>	
+
+</main>
+
+<script src="liliane.js"></script>
+
+</body>
+
+</html>
