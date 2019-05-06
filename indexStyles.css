@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: 'Italianno-Regular';
+  src:
+  url('fonts/Italianno-Regular/Italianno-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Italianno-Regular/Italianno-Regular.woff') format('woff'),
+  url('fonts/Italianno-Regular/Italianno-Regular.ttf')  format('truetype'),
+  url('fonts/Italianno-Regular/Italianno-Regular.svg#Italianno-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src:
+  url('fonts/raleway/raleway_medium/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.woff') format('woff'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.ttf')  format('truetype'),
+  url('fonts/raleway/raleway_medium/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html, body, .container-fluid {
+	height: 100%; /* container en row nemen volledige pagina in beslag zodat ik de lijst ook verticaal kan centreren */
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 100% !important;
+ 	background-color: linear-gradient(to bottom, #c2b95b, #e0dcad) !important;
+	color: black !important;
+}
+body::after {
+	content: "";
+	background: url("https://cdn.pixabay.com/photo/2017/06/15/23/47/painting-2407262_960_720.jpg");
+ 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+#hoofding {
+  margin-top: 5%;
+	height: 20% !important;
+	justify-content: flex-end;
+}
+#lijstWerk {
+	height: 50%;
+	z-index: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 70%;
+}
+header {
+  margin: 0 auto !important;
+	text-align: center;
+  font-family: 'Italianno-Regular' !important;
+  text-shadow: #fcf1d2 1px 3px 7px;
+  line-height: 160px;
+	font-size: 15em !important;
+  color: #78433b !important;
+}
+.col-lg-3.col-md-3.col-sm-6.col-xs-12 {
+	text-align: center;
+}
+a {
+	color: #78433b !important;
+  font-family: 'Raleway-Medium' !important;
+	/*font-family: 'Roboto', sans-serif !important;*/
+	font-size: 3.3em;
+	padding: 0.55em;
+	text-decoration: none !important;
+}
+a:hover {
+	text-decoration: none;
+	border: 2px #78433b solid !important;
+  box-shadow: 3px 3px 3px #442622;
+	color: #78433b !important;
+	border-radius: 10px;
+	//animation-name: hoverA;
+	//animation-duration: 0.15s;
+	//animation-timing-function: linear;
+	//animation-fill-mode: forwards;
+	text-decoration: none !important;
+}
+a:active {
+	border-radius: 10px;
+	background-color: #f0eed6 !important;
+	color: #90B204  !important;
+}
+
+@keyframes hoverA {
+	0% {
+		font-size: 3em;
+		bottom: 0px;
+		box-shadow: 0px 0 0;
+	}
+	100% {
+		font-size: 2.6em;
+		bottom: 5px;
+		box-shadow: 5px 5px 5px rgba(24, 86, 24, 0.5);
+	}
+}
+
+
+
+@media (min-height:650px) and (min-width: 577px) {
+	#hoofding {
+		height: 45%;
+	}
+}
+@media (min-height:650px) and (max-width: 577px) {
+	#hoofding {
+		height: 40%;
+	}
+}
+@media (max-width:992px) {
+	html {
+		font-size : 9px;
+	}
+	h1 {
+		font-size: 5.5em !important;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	#lijstWerk {
+		height: 20%;
+	}
+	.col-lg-3.col-md-3.col-sm-6.col-xs-12.left {
+		text-align: right;
+		padding-right: 3em;
+	}
+	.col-lg-3.col-md-3.col-sm-6.col-xs-12.right {
+		text-align: left;
+		padding-left: 3em;
+	}
+}
+@media (max-width:750px) {
+	#hoofding {
+		justify-content: center;
+	}
+}
