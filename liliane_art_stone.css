@@ -1,0 +1,59 @@
+body, html {
+  background-color: #e0e2e1;
+}
+nav.navbar {
+    background: url("achtergronden/attractive-backdrop-background-988872.jpg");
+    border-right: 10px #202124 solid;
+}
+li.navbar-item a.nav-link {
+  text-align: center;
+  color: #08090d;
+  /*lettertype veranderen*/
+  font-family: 'Nunito', sans-serif  !important;
+  font-size: 20px;
+  font-weight: bold:
+  /*font-family: 'Roboto Condensed', sans-serif;*/s
+}
+li.navbar-item a.nav-link:hover {
+  border: 2px #f5d8f2 solid;
+  font-style: italic;
+  background-color: #202124;
+  border-radius: 7px;
+  color: #f5d8f2;
+}
+.navbar-brand, .navbar-brand:hover {
+  font-family: 'Italianno-Regular' !important;
+  line-height: 80px;
+	font-size: 5em !important;
+  color: #08090d;
+  text-align: center;
+  text-shadow: #f5d8f2 1px 3px 7px;
+  /*lettertype veranderen*/
+  /*font-family: 'Mr Dafoe', cursive;
+  font-size: 100px;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-family: 'Meddon', cursive;
+  font-family: 'Homemade Apple', cursive; */
+}
+.carousel-caption {
+  color: #202124;
+}
+ol.carousel-indicators li{
+  background: none;
+  border: 1px #202124 solid;
+  height: 20px;
+  width: 20px !important;
+  border-radius: 50%;
+  background-color: #8f8f91 !important;
+}
+ol.carousel-indicators li:active {
+  background-color: #202124 !important;
+  border-color: #f5d8f2 !important;
+}
+/*https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel*/
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23323336' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23323336' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
