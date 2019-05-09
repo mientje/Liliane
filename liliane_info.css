@@ -1,0 +1,9 @@
+main, section {
+  display: block;
+}
+section.info {
+  height: 1800px;
+  padding-left: 30px;
+  padding-top: 30px;
+  text-align: left;
+}
